@@ -1,0 +1,28 @@
+My Approach and Methodolgy:
+ - To find the number of records I used data.shape which gave me the number of rows and columns, the number of rows is the number of records.
+ - To find the data types I used data.info().
+ - To find the number of missing values I used data.isnull().sum().
+ - I used a histplot to find the sentiment distribution.
+ - I used a line graph to find sentiment trends over time.
+ - I used a bar graph to find sentiment distribution with each sender.
+ - I used a boxplot to find the distribution of message length with positive and negative messages.
+
+Key Findings from EDA:
+ - The number of records was 2191.
+ - All the data types were objects.
+ - There were no missing values.
+ - There were more negative than positive messages.
+ - The sentiment trends over time remained consistent.
+ - Aside from johnny.palmer@enron.com all the senders had more negative than positive messages.
+ - Positive messages tend to be shorter than negative messages.
+
+
+Explanation of Employee Scoring and Ranking Processes:
+ - After assigning a sentiment to each message, I used a funstion to assign a score to ach sentiment. Then I grouped all the scores by sender and summed them up to get the overall scores for each sender.
+
+Flight Risk Identification Criteria and Outcomes:
+ - Flight risks were senders who had 4 or more messages sent within a span of 30 days.
+ - These are the senders that were considered flight risks: don.baughman@enron.com, rhonda.denton@enron.com, john.arnold@enron.com, patti.thompson@enron.com, johnny.palmer@enron.com, sally.beck@enron.com, bobette.riner@ipgdirect.com, eric.bass@enron.com, lydia.delgado@enron.com, kayne.coulter@enron.com
+
+Overview and Evaluation of Predictive Model:
+ - The predictive model wasnt very accurate as there doesnt seem to be a strong correlation between any of the features and the sentiment scores.
